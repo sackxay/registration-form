@@ -11,6 +11,15 @@ h1 {
   background-color: #000;
 }
 
+.btn:hover {
+  background-color: #f2f2f2;
+  border-color: #000;
+}
+
 @media only screen and (min-width: 60em) {
+
+  .grid {
+    padding: 0;
+  }
 
 }
