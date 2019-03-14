@@ -12,29 +12,28 @@
 
 </head>
 <body>
+  <form class="island push-0" method="POST" action="https://formspree.io/lova0007@algonquinlive.com">
 
-<section class="island">
 <h1>Want to go to Mars?</h1>
 <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-<form class="push-0" method="POST" action="https://formspree.io/lova0007@algonquinlive.com">
-    <fieldset>
-      <legend class="push italic giga">Personal details</legend>
+    <fieldset class="grid">
+      <legend class="unit push italic giga">Personal details</legend>
 
-  <div class="push">
+  <div class="unit push xs-1 s-1 m-1 l-1">
       <label for="name">Name</label>
       <input id="name" required>
     </div>
 
-<div class="push">
+<div class="unit push xs-1">
   <label for="number">Age</label>
   <input id="number" required>
   </div>
-  <div class="push">
+  <div class="unit push">
           <label for="email">Email</label>
           <input id="email" type="email" placeholder="me@me.com" name="email" required>
         </div>
 
-<div class="push">
+<div class="unit push xs-1">
         <label for="fitness">Physical fitness</label>
         <select id="fitness">
           <option>Super-human</option>
@@ -44,21 +43,22 @@
         </select>
 </div>
 
-<div class="push">
+<div class="unit push xs-1">
   <label for="address">Address</label>
   <textarea id="address"></textarea>
   </div>
 
 </fieldset>
 <fieldset>
-<legend class=" giga push italic">Mission statement</legend>
-<label for="why">Why do you want to go to Mars?</label>
+<legend class="giga push italic">Mission statement</legend>
+<label class="xs-1" for="why">Why do you want to go to Mars?</label>
 <textarea id="why"></textarea>
 </fieldset>
 
-<button class="center-content" type="submit">Register for the trip!</button>
-
-<input type=hidden name="Request to join the mission" value="Hi, here's a form"
+<div class="text-center">
+<button class="btn" type="submit">Register for the trip!</button>
+</div>
+<input type="hidden" name="Request to join the mission" value="Hi, here's a form">
 </form>
 </body>
 </html>
