@@ -18,8 +18,16 @@ h1 {
 
 @media only screen and (min-width: 60em) {
 
-  .grid {
-    padding: 0;
+  .left {
+    display: inline-block;
+    padding-right: .5rem;
+    width: 49%;
+  }
+
+  .right {
+    display: inline-block;
+    padding-left: .5rem;
+    width: 49%
   }
 
 }

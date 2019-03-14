@@ -13,45 +13,47 @@
 </head>
 <body>
   <form class="max-length gutter push-0" method="POST" action="https://formspree.io/lova0007@algonquinlive.com">
-<div class="grid">
-    <h1 class="unit pad-t-2">Want to go to Mars?</h1>
-    <p class="unit mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-    <fieldset>
-      <legend class="unit push italic giga">Personal details</legend>
 
-      <div class="unit push xs-1 s-1 m-1-2 l-1-2">
-        <label for="name">Name</label>
-        <input id="name" required>
+    <h1 class="pad-t-2">Want to go to Mars?</h1>
+    <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    <fieldset class="unit push-1-2 max-length">
+      <legend class="unit pad-b-1-2 push-1-4 italic mega">Personal details</legend>
+      <div class="grid">
+        <div class="unit left push xs-1 s-1 m-1-2 l-1-2">
+          <label for="name">Name</label>
+          <input id="name" required>
+        </div>
+
+        <div class="unit right push xs-1 s-1 m-1 l-1-2">
+          <label for="number">Age</label>
+          <input id="number" required>
+        </div>
+        <div class="unit left push xs-1 s-1 m-1 l-1-2">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+
+        <div class="unit push right xs-1 s-1 m-1 l-1-2">
+          <label for="fitness">Physical fitness</label>
+          <select id="fitness" name="fitness">
+            <option>Super-human</option>
+            <option>Fit as a fiddle</option>
+            <option>Not terribly strong</option>
+            <option>A little couch-potato-y</option>
+          </select>
+        </div>
       </div>
 
-      <div class="unit push xs-1 s-1 m-1-2 l-1-2">
-        <label for="number">Age</label>
-        <input id="number" required>
-      </div>
-      <div class="unit push xs-1 s-1 m-1-2 l-1-2">
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email" required>
-      </div>
-
-      <div class="unit push xs-1 s-1 m-1-2 l-1-2">
-        <label for="fitness">Physical fitness</label>
-        <select id="fitness" name="fitness">
-          <option>Super-human</option>
-          <option>Fit as a fiddle</option>
-          <option>Not terribly strong</option>
-          <option>A little couch-potato-y</option>
-        </select>
-      </div>
-
-      <div class="unit push-2 xs-1 s-1 m-1 l-1">
+      <div class="unit push-0 xs-1 s-1 m-1 l-1">
         <label for="address">Address</label>
         <textarea id="address" name="address"></textarea>
       </div>
 
     </fieldset>
-    </div>
+
+
     <fieldset>
-      <legend class="giga push italic">Mission statement</legend>
+      <legend class="mega pad-t-1-4 push-1-2 italic">Mission statement</legend>
       <label class="xs-1" for="why">Why do you want to go to Mars?</label>
       <textarea id="why"></textarea>
     </fieldset>
