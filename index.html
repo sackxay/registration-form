@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <title>Registration Form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/module.css" rel="stylesheet">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -16,12 +17,14 @@
 <h1>Want to go to Mars?</h1>
 <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 <form class="push-0" method="POST" action="https://formspree.io/lova0007@algonquinlive.com">
-  <div class="push">
     <fieldset>
-<legend>Personal details</legend>
-<label for="name">Name</label>
-<input id="name" required>
-</div>
+      <legend class="push italic giga">Personal details</legend>
+
+  <div class="push">
+      <label for="name">Name</label>
+      <input id="name" required>
+    </div>
+
 <div class="push">
   <label for="number">Age</label>
   <input id="number" required>
@@ -31,21 +34,31 @@
           <input id="email" type="email" placeholder="me@me.com" name="email" required>
         </div>
 
-        <label for="fitness">Physical Fitness</label>
+<div class="push">
+        <label for="fitness">Physical fitness</label>
         <select id="fitness">
+          <option>Super-human</option>
           <option>Fit as a fiddle</option>
           <option>Not terribly strong</option>
           <option>A little couch-potato-y</option>
         </select>
+</div>
 
+<div class="push">
+  <label for="address">Address</label>
+  <textarea id="address"></textarea>
+  </div>
 
-Address
+</fieldset>
+<fieldset>
+<legend class=" giga push italic">Mission statement</legend>
+<label for="why">Why do you want to go to Mars?</label>
+<textarea id="why"></textarea>
+</fieldset>
 
-Mission statement
-Why do you want to go to Mars?
+<button class="center-content" type="submit">Register for the trip!</button>
 
-Register for the trip!
-
-Request to join the mission
+<input type=hidden name="Request to join the mission" value="Hi, here's a form"
+</form>
 </body>
 </html>
